@@ -1,0 +1,45 @@
+*{
+ left: 0;
+ top: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 12px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 img {
+    width: 50%;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .img1 img {
+        width: 80%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
