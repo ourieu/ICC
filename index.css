@@ -99,3 +99,34 @@ main {
         width: 100%;
     }
 }
+
+.herotext {
+    padding: 20px;
+}
+
+.containerabout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+}
+
+    .card {
+      width: 240px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-text {
+      padding: 15px;
+      background-color: #fff;
+    }
