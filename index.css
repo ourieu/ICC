@@ -21,19 +21,19 @@ nav li {
 
 nav a {
     height: 100%;
-    padding: 0 10px;
+    padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: #077994;
 }
 
 nav li:first-child {
     margin-right: auto;
 }
 
-.logo img {
-    width: 50px;
+.img2 img {
+    width: 30px;
 }
 
 .sidebar {
@@ -43,7 +43,7 @@ nav li:first-child {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.142);
+    background-color: rgba(255, 255, 255, 0.145);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -60,37 +60,16 @@ nav li:first-child {
     width: 100%;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.img1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img1 img {
-    width: 60%;
-}
-
 .menu {
     display: none;
 }
 
 @media (max-width:800px) {
-    .img1 img {
-        width: 100%;
-    }
-
-    .hideOnMobile {
+    .hideonmobile {
         display: none;
     }
     .menu {
-        display: flex;
+        display: block;
     }
 }
 
@@ -100,45 +79,59 @@ main {
     }
 }
 
-.herotext {
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
     padding: 20px;
 }
 
-.containerabout {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.img1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul {
+    list-style: none;   
+}
+
+.container li {
+    margin: 10px 0;
+}
+
+.container li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #077994;
+    color: white;
+    border-radius: 999px; /* fully rounded left and right */
+    min-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    gap: 10px;
 }
 
-    .card {
-      width: 240px;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .card-text {
-      padding: 15px;
-      background-color: #fff;
-    }
-
-@media (max-width:1000px) {
-    .containerabout {
-        grid-template-columns: 1fr 1fr;
-    }
+.poster img {
+    width: 60%;
 }
 
-@media (max-width:700px) {
-    .containerabout {
-        grid-template-columns: 1fr;
+@media (max-width:400px) {
+    .poster img {
+        width: 90%;
     }
 }
