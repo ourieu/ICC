@@ -135,3 +135,17 @@ nav li:first-child {
         width: 90%;
     }
 }
+
+.videocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+@media (max-width:400px) {
+    .videocontainer iframe {
+        width: 200px;
+        height: 140px;
+    }
+}
