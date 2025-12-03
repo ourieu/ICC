@@ -121,10 +121,15 @@ nav li:first-child {
 
 .poster {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;   /* like grid 1fr = 1 column */
+    justify-content: center;  /* vertical (main axis) */
+    align-items: center;      /* horizontal (cross axis) */
     padding: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
+
+
 
 .poster img {
     width: 60%;
